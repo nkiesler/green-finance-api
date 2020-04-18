@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [{ "src": "server.js", "use": "@now/node-server" }],
+  "env": {
+    "MONGODB_URI": "@mongodb-uri"
+  },
+  "routes": [
+	    {
+	      "src": "/users/register",
+	      "dest": "/server.js",
+	      "methods": ["POST"]
+	    }
+	]
+}
